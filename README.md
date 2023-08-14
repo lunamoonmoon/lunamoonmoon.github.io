@@ -1,21 +1,24 @@
 ## Hi, :wave: I'm Luna! :sparkles:
 
+---
+
 ![what the picture is](link to image)
 
-what im learning
+### Languages
+* Javascript
+* HTML
+* CSS
 
-*list languages
-**Javascript
-**HTML
-**CSS
+### Education
+* Lighthouse Labs
+* Camosun
 
-*list schooling
-**Lighthouse Lbas
-**Camosun
+### Hobbies
+* Reading Terry Pratchet :open_book:
+* Painting with gouche :art:
+* Biking :bicyclist:
 
-*list hobbies
-**reading Terry Pratchet :open_book:
-**painting with gouche :art:
-**biking :bicyclist:
+---
 
-links to socials [linkedin](linkhere)
+### Links to socials
+[linkedin](linkhere)
