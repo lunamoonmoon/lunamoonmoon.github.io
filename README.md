@@ -6,10 +6,14 @@
 
 ### Languages
 * Javascript
+* CS
 * HTML
 * CSS
+* DOTNET
+* React, Vite, NextJS
 
 ### Education
+* Thompson Rivers University
 * Lighthouse Labs
 * Camosun
 
@@ -21,4 +25,3 @@
 ---
 
 ### Links to socials
-[linkedin](linkhere)
