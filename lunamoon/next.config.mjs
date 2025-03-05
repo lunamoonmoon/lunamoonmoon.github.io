@@ -2,10 +2,7 @@
 
 const nextConfig = {
   output: 'export',
-  // images: {
-  //   loader: 'custom',
-  //   loaderFile: './my-loader.ts',
-  // },
+  basePath: '/lunamoonmoon.github.io',
 };
 
 export default nextConfig;
