@@ -65,11 +65,12 @@ export default function Art() {
         
         <div className={styles.contact} id='contact'>
           <h1>Let&apos;s Connect!</h1>
-          <p>Contact me by email</p>
-          <EmailButton/>
-          <a href="https://www.instagram.com/lunawatercolourweddings/">
-            <button className={styles.button}>Or find me on Instagram here!</button>
-          </a>
+          <div className={styles.buttoncontainer} id='buttoncontainer'>
+            <EmailButton/>
+            <a href="https://www.instagram.com/lunawatercolourweddings/">
+              <button className={styles.button}>Or find me on Instagram here!</button>
+            </a>
+          </div>
         </div>
       </div>
       <Footer/>

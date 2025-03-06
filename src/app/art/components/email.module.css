@@ -10,6 +10,7 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    margin: 1em;
 }
 
 .emailButton:hover {

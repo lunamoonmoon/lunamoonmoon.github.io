@@ -25,15 +25,11 @@
 }
 
 .howitworks {
-  background-color: #889A9A;
-  color: #fff;
   width: 100%;
   padding: 1em;
 }
 
 .about {
-  background-color: #889A9A;
-  color: #fff;
   width: 100%;
   padding: 1em;
 }
@@ -54,8 +50,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #889A9A;
-  color: #fff;
   width: 100%;
   padding: 1em;
 }
@@ -63,6 +57,10 @@
 .contact p {
   font-weight: 700;
   margin: 2em;
+}
+
+.buttoncontainer {
+  margin: 1em;
 }
 
 .button {
