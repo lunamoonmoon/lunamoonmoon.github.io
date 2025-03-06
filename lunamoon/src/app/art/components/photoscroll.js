@@ -6,10 +6,10 @@ import { animated, useSpring } from "@react-spring/web";
 import styles from "./photoscroll.module.css";
 
 const images = [
-  "/lunamoonmoon.github.io/portrait.jpeg",
-  "/lunamoonmoon.github.io/table.jpg",
-  "/lunamoonmoon.github.io/weddingart1.jpeg",
-  "/lunamoonmoon.github.io/weddingart2.jpeg",
+  "/portrait.jpeg",
+  "/table.jpg",
+  "/weddingart1.jpeg",
+  "/weddingart2.jpeg",
 ];
 
 export default function PhotoScroll() {
