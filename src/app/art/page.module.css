@@ -130,6 +130,7 @@
   padding: 50px 20px;
   background-color: #f9f9f9;
   text-align: center;
+  width: 100%;
 }
 
 .testimonials h2 {
@@ -175,7 +176,6 @@
 }
 
 .testimonialText::before {
-  content: "“";
   font-size: 2rem;
   color: #a0a0a0;
   position: absolute;
@@ -184,7 +184,6 @@
 }
 
 .testimonialText::after {
-  content: "”";
   font-size: 2rem;
   color: #a0a0a0;
   position: absolute;

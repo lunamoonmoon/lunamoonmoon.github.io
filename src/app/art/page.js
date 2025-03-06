@@ -20,7 +20,7 @@ export default function Art() {
           />
           <h1>Welcome to Watercolour Weddings BC!</h1>
           <p>
-          I am a local artist in Victoria BC who enjoys painting with portraits with watercolours!
+            Hi! My name is Luna and I&apos;m a passionate local artist based in Victoria, BC, specializing in creating stunning watercolor portraits that capture the essence of guests on your important day.
           </p>
         </div>
 
