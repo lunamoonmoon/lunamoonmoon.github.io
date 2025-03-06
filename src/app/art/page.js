@@ -14,6 +14,8 @@ export default function Art() {
       <div className={styles.main}>
         <div className={styles.welcome} id='welcome'>
           <h1>Welcome to Watercolour Weddings by Me (Luna)!</h1>
+          <p>
+          Welcome to watercolour weddings BC! I am a local artist who enjoys working with watercolours and painting portraits!</p>
         </div>
 
         <div className={styles.howitworks} id='howitworks'>
@@ -48,6 +50,10 @@ export default function Art() {
             Capture the beauty and charm of your family with our paintings.
             </li>
           </ul>
+        </div>
+
+        <div className={styles.testimonials} id='testimonials'>
+
         </div>
 
         <div className={styles.about} id='about'>

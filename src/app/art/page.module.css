@@ -44,6 +44,12 @@
   align-items: center;
 }
 
+.testimonials {
+  width: 100%;
+  padding: 1em;
+  align-items: center;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
