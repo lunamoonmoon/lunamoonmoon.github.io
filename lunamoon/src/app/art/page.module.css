@@ -1,8 +1,72 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  background-color: #fff;
+  color: #000000cc;
   min-height: 100vh;
   margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow: visable;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  scroll-snap-align: start;
+  padding: 1em;
+  font-family: "Italianno", cursive;
+  font-style: normal;
+}
+
+.about {
+  background-color: #889A9A;
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+}
+
+.portfolio {
+  width: 100%;
+  padding: 1em;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #889A9A;
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+}
+
+.contact p {
+  font-weight: 700;
+  margin: 2em;
+}
+
+.button {
+  margin-top: 1em;
+  background-color: #bd9256;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #db9129;
 }

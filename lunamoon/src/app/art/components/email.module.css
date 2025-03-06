@@ -1,0 +1,17 @@
+.emailButton {
+    background-color: #bd9256;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.emailButton:hover {
+  background-color: #db9129;
+}

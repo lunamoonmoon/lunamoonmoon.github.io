@@ -14,7 +14,7 @@ export default function Navbar() {
       />
       </Head>
       <div className={styles.logo}>
-        <a href="/" className="logo">
+        <a href="/art" className="logo">
         Luna Watercolour Weddings
         </a>
         {/* <Image
@@ -24,15 +24,15 @@ export default function Navbar() {
             height={50} // Adjust height
           /> */}
       </div>
-      <div className={styles.links}>
+      <div className={styles.links} >
         <ul>
           <li>
-            <Link href="/art/portfolio">
+            <Link href="#portfolio">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link href="/art/contact">
+            <Link href="#contact">
               Contact Me
             </Link>
           </li>
