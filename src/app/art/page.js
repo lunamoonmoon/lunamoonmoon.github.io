@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from './components/navbar';
@@ -13,9 +12,16 @@ export default function Art() {
       <Navbar/>
       <div className={styles.main}>
         <div className={styles.welcome} id='welcome'>
-          <h1>Welcome to Watercolour Weddings by Me (Luna)!</h1>
+        <Image
+            src="/Watercolour Weddings Logo.png"
+            alt="Luna Watercolour Weddings"
+            width={250}
+            height={150}
+          />
+          <h1>Welcome to Watercolour Weddings BC!</h1>
           <p>
-          Welcome to watercolour weddings BC! I am a local artist who enjoys working with watercolours and painting portraits!</p>
+          I am a local artist in Victoria BC who enjoys painting with portraits with watercolours!
+          </p>
         </div>
 
         <div className={styles.howitworks} id='howitworks'>
@@ -32,45 +38,64 @@ export default function Art() {
           <PhotoScroll/>
         </div>
 
-        <div className={styles.portfolio} id='services'>
-          <h2>Watercolour Illistration Services</h2>
-          <ul>
-            <li>
-              Wedding Guest Portraits
+        <div className={styles.services} id="services">
+          <h2>Watercolour Illustration Services</h2>
 
-              Custom Guest Art starting at $250
+          <div className={styles.service}>
+            <h3>Wedding Guest Portraits</h3>
+            <p className={styles.price}>Custom Guest Portraits starting at $60/hr</p>
+            <p className={styles.description}>
+              Celebrate your special day with personalized, hand-painted wedding guest portraits. Guests will be delighted by a one-of-a-kind piece of art that captures the joy and love shared at your wedding. These portraits make a unique and meaningful memento for everyone in attendance.
+            </p>
+          </div>
 
-              Our wedding portraits are a timeless way to commemorate your special day, capturing the love and joy shared with your guests. The custom art adds a personal touch to your event, creating a memorable experience for all your guests to cherish.
-            </li>
-            <li>
-            Custom Family Paintings
-
-            A fun family keepsake starting at $7 per person
-
-            Capture the beauty and charm of your family with our paintings.
-            </li>
-          </ul>
+          <div className={styles.service}>
+            <h3>Custom Family Paintings</h3>
+            <p className={styles.price}>Custom Family Art starting at $30</p>
+            <p className={styles.description}>
+              Create lasting memories with a custom family portrait. Whether it&apos;s for a family gathering or a special occasion, these hand-painted paintings capture the beauty and personality of your loved ones. It&apos;s the perfect way to preserve the charm and warmth of your family for years to come.
+            </p>
+          </div>
         </div>
 
-        <div className={styles.testimonials} id='testimonials'>
-
+        <div className={styles.testimonials} id="testimonials">
+          <h2>Testimonials</h2>
+          <div className={styles.testimonialscontainer} id="testimonialscontainer">
+            <div className={styles.testimonialCard}>
+              <Image
+                src="/testimonial.png"
+                alt="testimonial"
+                width={200}
+                height={200}
+                className={styles.testimonialImage}
+              />
+              <p className={styles.testimonialText}>
+                &quot;We are so touched with the amount of work and effort you put in to make our day special. Everyone absolutely loved it, and I can not believe how talented you are and how beautiful the paintings were.&quot; - The Rams
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.about} id='about'>
           <h2>About me</h2>
           <p>
-          Hello! I&apos;m passionate about painting, drawing, and watercolour. Art has always been something I enjoy, and it’s been truly rewarding to share my creations with others. I love expressing my creativity and connecting with people through portraits.
+          I&apos;m passionate about painting, drawing, and watercolour. I also like to make crochet plushies too! Art has always been something I enjoy, and it’s been truly rewarding to share my creations with others. I love expressing my creativity and connecting with people through portraits.
           </p>
         </div>
         
         <div className={styles.contact} id='contact'>
           <h1>Let&apos;s Connect!</h1>
-          <div className={styles.buttoncontainer} id='buttoncontainer'>
-            <EmailButton/>
+          <p>
+            Find me on Instagram at
+            <br />
             <a href="https://www.instagram.com/lunawatercolourweddings/">
-              <button className={styles.button}>Or find me on Instagram here!</button>
+              <button className={styles.button}>@lunawatercolourweddings</button>
             </a>
-          </div>
+            <br />
+            <br />
+            <p>Or send me an email at 5862lunamoon@gmail.com</p>
+            <EmailButton className={styles.emailbtn} />
+          </p>
         </div>
       </div>
       <Footer/>

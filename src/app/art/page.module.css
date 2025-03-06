@@ -6,7 +6,7 @@
   background-color: #fff;
   color: #000000cc;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -20,18 +20,62 @@
   width: 100%;
   scroll-snap-align: start;
   padding: 1em;
+}
+
+.welcome h1 {
   font-family: "Italianno", cursive;
   font-style: normal;
 }
 
-.howitworks {
-  width: 100%;
-  padding: 1em;
+.welcome, .howitworks, .portfolio, .services, .testimonials, .about, .contact {
+  padding: 2rem;
+  margin-bottom: 3rem;
 }
 
-.about {
-  width: 100%;
-  padding: 1em;
+.welcome img {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.welcome h1, .howitworks h2, .services h2, .testimonials h2, .about h2, .contact h1 {
+  font-size: 2rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.welcome p, .howitworks ul, .testimonialscontainer p, .about p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.howitworks {
+  padding: 2rem 1rem;
+  background-color: #faf0eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.howitworks ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.howitworks ul li {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.howitworks ul li::before {
+  content: "✔";
+  color: #dab39f;
+  margin-right: 0.5rem;
 }
 
 .portfolio {
@@ -40,44 +84,189 @@
   align-items: center;
 }
 
+.services {
+  padding: 2rem;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #34495e;
+}
+
+.service {
+  margin-bottom: 2rem;
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.service .price {
+  font-size: 1.2rem;
+  color: #dab39f;
+  font-weight: bold;
+}
+
+.service .description {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.service .description strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
 .testimonials {
-  width: 100%;
-  padding: 1em;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.testimonialscontainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonialCard {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialImage {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonialText {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.testimonialText::before {
+  content: "“";
+  font-size: 2rem;
+  color: #a0a0a0;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.testimonialText::after {
+  content: "”";
+  font-size: 2rem;
+  color: #a0a0a0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.testimonialCard h3 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1em;
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
 }
 
 .contact p {
-  font-weight: 700;
-  margin: 2em;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-.buttoncontainer {
-  margin: 1em;
+.contact .buttoncontainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact .buttoncontainer a {
+  text-decoration: none;
+}
+
+.contact .button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.contact .button:hover {
+  background-color: #006f8e;
+  transform: scale(1.05);
+}
+
+.contact .button:focus {
+  outline: none;
+}
+
+.contact .button:active {
+  transform: scale(0.98);
 }
 
 .button {
-  margin-top: 1em;
-  background-color: #bd9256;
-  color: #ffffff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #db9129;
+  background-color: #2980b9;
 }

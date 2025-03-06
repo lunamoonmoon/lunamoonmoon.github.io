@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from "./navbar.module.css";
@@ -16,20 +15,19 @@ export default function Navbar() {
       </Head>
       <div className={styles.logo}>
         <a href="/art" className="logo">
-        Luna Watercolour Weddings
+        Watercolour Weddings BC by Luna
         </a>
-        {/* <Image
-            src="/path/to/logo.png"
-            alt="Luna Watercolour Weddings"
-            width={150} // Adjust width
-            height={50} // Adjust height
-          /> */}
       </div>
       <div className={styles.links} >
         <ul>
           <li>
             <Link href="#portfolio">
               Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link href="#testimonials">
+              Testimonials
             </Link>
           </li>
           <li>

@@ -1,23 +1,82 @@
 .PhotoScroll {
-  min-height: fit-content;
-  display: flex;
-  overflow-x: scroll;
-  width: 100%;
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  overflow-x: auto;
 }
 
 .container {
   display: flex;
-  overflow-x: scroll;
-  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
 }
 
 .card {
-  flex-shrink: 0;
-  width: 300px;
-  height: 200px;
+  position: relative;
+  min-width: 300px;
+  height: 300px;
   border-radius: 10px;
-  margin-left: 10px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.caption {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modalContent img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }
