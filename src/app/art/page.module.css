@@ -24,6 +24,13 @@
   font-style: normal;
 }
 
+.howitworks {
+  background-color: #889A9A;
+  color: #fff;
+  width: 100%;
+  padding: 1em;
+}
+
 .about {
   background-color: #889A9A;
   color: #fff;

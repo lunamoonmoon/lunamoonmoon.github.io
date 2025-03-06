@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { animated, useSpring } from "@react-spring/web";
 import styles from "./photoscroll.module.css";
+import '../styles/global.css';
 
 const images = [
   "/portrait.jpeg",

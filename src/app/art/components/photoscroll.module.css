@@ -21,7 +21,3 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-::-webkit-scrollbar {
-  width: 0px;
-}
